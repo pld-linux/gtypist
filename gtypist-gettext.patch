@@ -1,0 +1,9 @@
+--- gtypist-2.6.2/configure.in	2002-10-29 11:33:59.000000000 +0100
++++ gtypist-2.6.2/configure.in~	2002-09-01 09:57:50.000000000 +0200
+@@ -54,5 +54,5 @@
+ 
+ AC_SUBST(GEN_MAN)
+ 
+-AC_OUTPUT(po/Makefile.in intl/Makefile lessons/Makefile tools/Makefile doc/Makefile Makefile po/Makefile.in m4/Makefile  intl/Makefile  intl/Makefile po/Makefile.in m4/Makefile )
++AC_OUTPUT(lessons/Makefile tools/Makefile doc/Makefile Makefile m4/Makefile po/Makefile.in intl/Makefile)
+ 
