@@ -1,23 +1,12 @@
-diff -urN gtypist-2.4.old/Makefile.am gtypist-2.4/Makefile.am
---- gtypist-2.4.old/Makefile.am	Tue Oct  9 22:14:46 2001
-+++ gtypist-2.4/Makefile.am	Wed Oct 31 21:10:23 2001
-@@ -8,7 +8,7 @@
- gtypist_SOURCES = gtypist.c getopt.h getopt.c getopt1.c
- gtypist_LDADD = @INTLLIBS@
- man_MANS = gtypist.1
--INCLUDES = -I./intl -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" 
-+INCLUDES = -I./intl -DPACKAGE_DATA_DIR=\"$(pkgdatadir)\" -I/usr/include/ncurses
+--- gtypist-2.6/Makefile.am~	Sun Apr 28 07:34:20 2002
++++ gtypist-2.6/Makefile.am	Mon Apr 29 21:29:57 2002
+@@ -16,7 +16,8 @@
+ 
+ AM_CPPFLAGS = -I./intl \
+   -DDATADIR=\"$(pkgdatadir)\" \
+-  -DLOCALEDIR=\"$(datadir)/locale\"
++  -DLOCALEDIR=\"$(datadir)/locale\" \
++  -I/usr/include/ncurses
  
  # GEN_MAN is a shell command that generates the man page
  GEN_MAN=@GEN_MAN@
---- gtypist-2.5/configure.in~	Sun Jan 20 10:41:40 2002
-+++ gtypist-2.5/configure.in	Tue Jan 22 14:04:28 2002
-@@ -18,7 +18,7 @@
- ALL_LINGUAS="de es fi fr"
- 
- dnl Checks for libraries.
--AC_SEARCH_LIBS(wbkgdset, curses,, echo "*** The curses library is required!";exit 1)
-+AC_SEARCH_LIBS(wbkgdset, ncurses,, echo "*** The curses library is required!";exit 1)
- 
- dnl Checks for header files.
- AC_HEADER_STDC
