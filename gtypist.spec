@@ -29,6 +29,7 @@ lekcji, na razie tylko po angielsku.
 %patch0 -p1
 
 %build
+rm -f missing
 aclocal
 autoconf
 automake -a -c
