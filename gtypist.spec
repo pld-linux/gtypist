@@ -2,7 +2,7 @@ Summary:	Program for learning typist
 Summary(pl):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
 Version:	2.6.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
