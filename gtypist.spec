@@ -2,7 +2,7 @@ Summary:	Program for learning typist
 Summary(pl):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
 Version:	2.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Group(de):	Applikationen/Text
@@ -10,9 +10,11 @@ Group(pl):	Aplikacje/Tekst
 Source0:	ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ncurses.patch
 URL:		http://www.gnu.org/software/gtypist
-BuildRequires:	ncurses-devel	
+BuildRequires:	ncurses-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 Provides:	typist
-# for backward compatibility
+Obsoletes:	typist
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,24 +33,20 @@ aclocal
 autoconf
 automake -a -c
 %configure
-%{__make} \
-	DESTDIR="${RPM_BUILD_ROOT}" \
-	prefix=%{_prefix}
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR="$RPM_BUILD_ROOT" \
-	BINDIR=%{_bindir}\
-	MANDIR=%{_mandir}\
-	prefix=%{_prefix}\
-
-install gtypist.1 $RPM_BUILD_ROOT/%{_mandir}/man1/
+	DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README AUTHORS NEWS TODO THANKS
 
 %find_lang %{name}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %post
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
@@ -56,13 +54,10 @@ gzip -9nf README AUTHORS NEWS TODO THANKS
 %postun
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc *.gz
-%attr(0755,root,root) %{_bindir}/%{name}
+%attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/*
 %{_infodir}/*
 %{_datadir}/%{name}
