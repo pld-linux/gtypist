@@ -31,7 +31,7 @@ lekcji, na razie tylko po angielsku.
 
 %build
 rm -f missing
-aclocal -I m4
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure
