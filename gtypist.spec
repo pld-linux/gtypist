@@ -1,12 +1,12 @@
 Summary:	Program for learning typist
 Summary(pl):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
-Version:	2.6.2
-Release:	2
+Version:	2.7
+Release:	0.1
 License:	GPL
 Group:		Applications/Text
-Source0:	ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	ca8cd4f23d7b1a91d2c3a36596525e81
+Source0:	http://gtypist.org/releases/%{version}/%{name}-%{version}.tar.bz2
+# Source0-md5:	200d42de9a0070866d88116112370f0a
 Patch0:		%{name}-ncurses.patch
 Patch1:		%{name}-info.patch
 Patch2:		%{name}-texinfo-fix.patch
@@ -14,7 +14,7 @@ Patch3:		%{name}-gettext.patch
 Patch4:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
-BuildRequires:	automake >= 1.6.3
+BuildRequires:	automake >= 1.7.7
 BuildRequires:	gettext-devel >= 0.11
 BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,8 +32,8 @@ lekcji, na razie tylko po angielsku.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
-%patch4 -p1
+#%patch3 -p1
+#%patch4 -p1
 
 %build
 rm -f missing
