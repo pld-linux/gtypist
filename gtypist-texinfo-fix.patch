@@ -10,11 +10,3 @@ diff -Nur gtypist-2.6.orig/doc/gtypist.cs.texi gtypist-2.6/doc/gtypist.cs.texi
  
  @copying
  Toto je manuál pro GNU Typist (verze @value{VERSION}, @value{UPDATED}),
-diff -Nur gtypist-2.6.orig/doc/version.cs.texi gtypist-2.6/doc/version.cs.texi
---- gtypist-2.6.orig/doc/version.cs.texi	Thu Jan  1 01:00:00 1970
-+++ gtypist-2.6/doc/version.cs.texi	Sun Apr 28 07:35:48 2002
-@@ -0,0 +1,4 @@
-+@set UPDATED 28 April 2002
-+@set UPDATED-MONTH April 2002
-+@set EDITION 2.6
-+@set VERSION 2.6

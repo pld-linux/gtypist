@@ -10,7 +10,7 @@ Source0:	http://gtypist.org/releases/%{version}/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-ncurses.patch
 Patch1:		%{name}-info.patch
 Patch2:		%{name}-texinfo-fix.patch
-Patch3:		%{name}-gettext.patch
+#Patch3:		%{name}-gettext.patch
 Patch4:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
@@ -33,10 +33,12 @@ lekcji, na razie tylko po angielsku.
 %patch1 -p1
 %patch2 -p1
 #%patch3 -p1
-#%patch4 -p1
+%patch4 -p1
+
+ln -sf version.texi doc/version.cs.texi
+rm -f po/stamp-po
 
 %build
-rm -f missing
 %{__gettextize}
 %{__aclocal} -I m4
 %{__autoconf}
