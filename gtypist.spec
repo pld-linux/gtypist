@@ -10,6 +10,7 @@ Patch0:		%{name}-ncurses.patch
 Patch1:		%{name}-info.patch
 Patch2:		%{name}-texinfo-fix.patch
 Patch3:		%{name}-gettext.patch
+Patch4:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
 BuildRequires:	automake >= 1.6.3
@@ -30,6 +31,7 @@ lekcji, na razie tylko po angielsku.
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 %build
 rm -f missing
