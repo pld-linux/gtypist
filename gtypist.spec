@@ -9,13 +9,12 @@ Group(de):	Applikationen/Text
 Group(pl):	Aplikacje/Tekst
 Source0:	ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ncurses.patch
-URL:		http://www.gnu.org/software/gtypist
-BuildRequires:	ncurses-devel
+URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
 BuildRequires:	automake
-Provides:	typist
-Obsoletes:	typist
+BuildRequires:	ncurses-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	typist
 
 %description
 This program came from a desire to learn 'proper' typing.
