@@ -13,7 +13,7 @@ Patch2:		%{name}-texinfo-fix.patch
 Patch3:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
-BuildRequires:	automake >= 1.7.7
+BuildRequires:	automake >= 1:1.7.7
 BuildRequires:	gettext-devel >= 0.11
 BuildRequires:	ncurses-devel
 BuildRequires:	texinfo
