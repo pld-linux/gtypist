@@ -2,13 +2,14 @@ Summary:	Program for learning typist
 Summary(pl):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
 Version:	2.4.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Text
 Group(de):	Applikationen/Text
 Group(pl):	Aplikacje/Tekst
 Source0:	ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
 Patch0:		%{name}-ncurses.patch
+Patch1:		%{name}-info.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -24,8 +25,9 @@ Program do nauki bezwzrokowego pisania na klawiaturze. Oferuje kilka
 lekcji, na razie tylko po angielsku.
 
 %prep
-%setup  -q
+%setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 rm -f missing

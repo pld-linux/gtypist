@@ -1,0 +1,15 @@
+--- gtypist-2.4.1/doc/gtypist.texi.orig	Tue Nov  6 22:35:07 2001
++++ gtypist-2.4.1/doc/gtypist.texi	Fri Dec  7 23:50:18 2001
+@@ -3,9 +3,9 @@
+ @settitle GNU Typist Manual
+ @include version.texi
+ 
+-@dircategory Education
+-@direntry Education
+-* GTypist: (gtypist). Documentation of the typing tutor gtypist.
++@dircategory Education:
++@direntry Education:
++* GTypist: (gtypist).			Typing tutor gtypist
+ @end direntry
+ 
+ @titlepage
