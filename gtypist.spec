@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	ftp://ftp.gnu.org/gnu/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	ca8cd4f23d7b1a91d2c3a36596525e81
 Patch0:		%{name}-ncurses.patch
 Patch1:		%{name}-info.patch
 Patch2:		%{name}-texinfo-fix.patch
