@@ -17,9 +17,6 @@ BuildRequires:	automake >= 1:1.7.7
 BuildRequires:	gettext-devel >= 0.11
 BuildRequires:	ncurses-devel
 BuildRequires:	texinfo
-BuildRequires:	xemacs
-BuildRequires:	xemacs-fsf-compat-pkg
-BuildRequires:	xemacs-sh-script-pkg
 Obsoletes:	typist
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
