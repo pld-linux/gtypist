@@ -1,5 +1,5 @@
 Summary:	Program for learning typist
-Summary(pl):	Program do nauki bezwzrokowego pisania na klawiaturze
+Summary(pl.UTF-8):   Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
 Version:	2.7
 Release:	1
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This program came from a desire to learn 'proper' typing.
 
-%description -l pl
+%description -l pl.UTF-8
 Program do nauki bezwzrokowego pisania na klawiaturze. Oferuje kilka
 lekcji, na razie tylko po angielsku.
 
