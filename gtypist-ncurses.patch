@@ -1,12 +1,57 @@
---- gtypist-2.6/Makefile.am~	Sun Apr 28 07:34:20 2002
-+++ gtypist-2.6/Makefile.am	Mon Apr 29 21:29:57 2002
-@@ -16,7 +16,8 @@
+--- gtypist-2.8.3-orig/src/error.c	2009-04-07 18:42:30.167021789 +0200
++++ gtypist-2.8.3/src/error.c	2009-04-07 18:42:46.073519275 +0200
+@@ -21,11 +21,7 @@
+ #include "config.h"
+ #include "error.h"
+ #include "script.h"
+-#ifdef HAVE_LIBCURSES
+-#include <curses.h>
+-#else
+ #include <ncurses/curses.h>
+-#endif
+ #include <stdlib.h>
  
- AM_CPPFLAGS = -I./intl \
-   -DDATADIR=\"$(pkgdatadir)\" \
--  -DLOCALEDIR=\"$(datadir)/locale\"
-+  -DLOCALEDIR=\"$(datadir)/locale\" \
-+  -I/usr/include/ncurses
+ #include "gettext.h"
+--- gtypist-2.8.3-orig/src/cursmenu.c	2009-04-07 18:42:30.167021789 +0200
++++ gtypist-2.8.3/src/cursmenu.c	2009-04-07 18:45:17.700752414 +0200
+@@ -21,11 +21,7 @@
+ #include "cursmenu.h"
+ #include "script.h"
  
- # GEN_MAN is a shell command that generates the man page
- GEN_MAN=@GEN_MAN@
+-#ifdef HAVE_LIBCURSES
+-#include <curses.h>
+-#else
+ #include <ncurses/curses.h>
+-#endif
+ 
+ #include "error.h"
+ #include "gtypist.h"
+--- gtypist-2.8.3-orig/src/gtypist.c	2009-04-07 18:42:30.167021789 +0200
++++ gtypist-2.8.3/src/gtypist.c	2009-04-07 18:45:34.140133532 +0200
+@@ -27,11 +27,7 @@
+ #include <ctype.h>
+ #include <signal.h>
+ 
+-#ifdef HAVE_LIBCURSES
+-#include <curses.h>
+-#else
+ #include <ncurses/curses.h>
+-#endif
+ 
+ #include <time.h>
+ #include <errno.h>
+--- gtypist-2.8.3-orig/src/script.c	2009-04-07 18:42:30.167021789 +0200
++++ gtypist-2.8.3/src/script.c	2009-04-07 18:48:07.830117125 +0200
+@@ -20,11 +20,7 @@
+  */
+ #include "config.h"
+ #include "script.h"
+-#ifdef HAVE_LIBCURSES
+-#include <curses.h>
+-#else
+-#include <ncurses.h>
+-#endif
++#include <ncurses/ncurses.h>
+ #include "error.h"
+ 
+ #include <stdlib.h>
