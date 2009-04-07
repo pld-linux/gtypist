@@ -1,16 +1,14 @@
 Summary:	Program for learning typist
+Summary(hu.UTF-8):	Program gépírás tanulásához
 Summary(pl.UTF-8):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
-Version:	2.7
+Version:	2.8.3
 Release:	1
 License:	GPL
 Group:		Applications/Text
-Source0:	http://gtypist.org/releases/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	200d42de9a0070866d88116112370f0a
+Source0:	http://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.bz2
+# Source0-md5:	43be4b69315a202cccfed0efd011d66c
 Patch0:		%{name}-ncurses.patch
-Patch1:		%{name}-info.patch
-Patch2:		%{name}-texinfo-fix.patch
-Patch3:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf
 BuildRequires:	automake >= 1:1.7.7
@@ -23,16 +21,27 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This program came from a desire to learn 'proper' typing.
 
+%description -l hu.UTF-8
+Ez a program a gépírás tanulásához íródott.
+
 %description -l pl.UTF-8
 Program do nauki bezwzrokowego pisania na klawiaturze. Oferuje kilka
 lekcji, na razie tylko po angielsku.
 
+%package emacs
+Summary:	Emacs mode
+Summary(hu.UTF-8):	Emacs mód
+Group:		Applications/Editors/Emacs
+
+%description emacs
+Emacs mode.
+
+%description emacs -l hu.UTF-8
+Emacs mód.
+
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
 
 ln -sf version.texi doc/version.cs.texi
 rm -f po/stamp-po
@@ -69,3 +78,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 %{_infodir}/*.info*
 %{_datadir}/%{name}
+
+%files emacs
+%defattr(644,root,root,755)
+%{_datadir}/emacs/site-lisp/gtypist*
