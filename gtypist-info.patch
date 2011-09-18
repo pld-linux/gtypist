@@ -1,0 +1,30 @@
+--- gtypist-2.8.5/doc/gtypist.texi.orig	2011-02-24 15:20:28.000000000 +0100
++++ gtypist-2.8.5/doc/gtypist.texi	2011-09-18 17:52:47.358127372 +0200
+@@ -27,9 +27,9 @@
+ @end quotation
+ @end copying
+ 
+-@dircategory Education
+-@direntry Education
+-* GTypist: (gtypist). Documentation of the typing tutor gtypist.
++@dircategory Miscellaneous:
++@direntry
++* GTypist: (gtypist).			Documentation of the typing tutor gtypist
+ @end direntry
+ 
+ @titlepage
+--- gtypist-2.8.5/doc/gtypist.cs.texi.orig	2011-03-24 12:19:21.000000000 +0100
++++ gtypist-2.8.5/doc/gtypist.cs.texi	2011-09-18 17:53:11.408128177 +0200
+@@ -30,9 +30,9 @@
+ @end quotation
+ @end copying
+ 
+-@dircategory Education
+-@direntry Education
+-* GTypist: (gtypist). Dokumentace k výukovému programu psaní
++@dircategory Miscellaneous:
++@direntry
++* GTypist: (gtypist).			Dokumentace k výukovému programu psaní
+ na klávesnici gtypist.
+ @end direntry
+ 
