@@ -14,6 +14,7 @@ Source0:	http://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.bz2
 # Source0-md5:	fdc223e29288cde265f67bec455a6d8b
 Patch0:		%{name}-ncurses.patch
 Patch1:		%{name}-info.patch
+Patch2:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8.2
@@ -50,6 +51,7 @@ Tryb Emacsa do edycji plików .typ gtypista.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %{__rm} po/stamp-po
 
