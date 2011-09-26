@@ -61,7 +61,8 @@ Tryb Emacsa do edycji plików .typ gtypista.
 %{__autoconf}
 %{__automake}
 %configure
-%{__make}
+# info creation fails randomly with big -j
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
