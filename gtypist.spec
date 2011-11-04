@@ -6,22 +6,23 @@ Summary:	Program for learning typist
 Summary(hu.UTF-8):	Program gépírás tanulásához
 Summary(pl.UTF-8):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
-Version:	2.8.5
+Version:	2.9
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
-Source0:	http://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.bz2
-# Source0-md5:	fdc223e29288cde265f67bec455a6d8b
-Patch0:		%{name}-ncurses.patch
-Patch1:		%{name}-info.patch
-Patch2:		%{name}-pl.po.patch
+Source0:	http://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.xz
+# Source0-md5:	6403c43acceffa3f15ce975bab8f562f
+Patch0:		%{name}-info.patch
+Patch1:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8.2
 %{?with_emacs:BuildRequires:	emacs}
 BuildRequires:	gettext-devel >= 0.12.1
 BuildRequires:	ncurses-devel
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	texinfo
+BuildRequires:	xz
 Obsoletes:	typist
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -51,7 +52,6 @@ Tryb Emacsa do edycji plików .typ gtypista.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
 
 %{__rm} po/stamp-po
 
@@ -91,6 +91,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/typefortune.1*
 %{_infodir}/gtypist.info*
 %lang(cs) %{_infodir}/gtypist.cs.info*
+%lang(es) %{_infodir}/gtypist.es.info*
 
 %if %{with emacs}
 %files emacs

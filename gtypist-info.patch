@@ -1,30 +1,46 @@
---- gtypist-2.8.5/doc/gtypist.texi.orig	2011-02-24 15:20:28.000000000 +0100
-+++ gtypist-2.8.5/doc/gtypist.texi	2011-09-18 17:52:47.358127372 +0200
+--- gtypist-2.9/doc/gtypist.texi.orig	2011-10-30 16:55:57.000000000 +0100
++++ gtypist-2.9/doc/gtypist.texi	2011-11-04 19:40:47.475802972 +0100
 @@ -27,9 +27,9 @@
  @end quotation
  @end copying
  
 -@dircategory Education
 -@direntry Education
--* GTypist: (gtypist). Documentation of the typing tutor gtypist.
+-* GNU Typist: (gtypist). Documentation of the typing tutor gtypist.
 +@dircategory Miscellaneous:
 +@direntry
-+* GTypist: (gtypist).			Documentation of the typing tutor gtypist
++* GNU Typist: (gtypist).		Documentation of the typing tutor gtypist
  @end direntry
  
  @titlepage
---- gtypist-2.8.5/doc/gtypist.cs.texi.orig	2011-03-24 12:19:21.000000000 +0100
-+++ gtypist-2.8.5/doc/gtypist.cs.texi	2011-09-18 17:53:11.408128177 +0200
-@@ -30,9 +30,9 @@
+--- gtypist-2.9/doc/gtypist.cs.texi.orig	2011-10-17 12:54:16.000000000 +0200
++++ gtypist-2.9/doc/gtypist.cs.texi	2011-11-04 19:41:34.942471227 +0100
+@@ -31,10 +31,9 @@
  @end quotation
  @end copying
  
 -@dircategory Education
 -@direntry Education
--* GTypist: (gtypist). Dokumentace k v˝ukovÈmu programu psanÌ
+-* GNU Typist (cs): (gtypist.cs). Dokumentace k v√Ωukov√©mu programu psan√≠
+-na kl√°vesnici gtypist.
 +@dircategory Miscellaneous:
 +@direntry
-+* GTypist: (gtypist).			Dokumentace k v˝ukovÈmu programu psanÌ
- na kl·vesnici gtypist.
++* GNU Typist (cs): (gtypist.cs).	Dokumentace k v√Ωukov√©mu programu psan√na kl√°vesnici gtypist
  @end direntry
  
+ @titlepage
+--- gtypist-2.9/doc/gtypist.es.texi.orig	2011-10-17 12:54:11.000000000 +0200
++++ gtypist-2.9/doc/gtypist.es.texi	2011-11-04 19:42:06.309138946 +0100
+@@ -31,9 +31,9 @@
+ @end quotation
+ @end copying
+ 
+-@dircategory Education
+-@direntry Education
+-* GNU Typist (es): (gtypist.es). Documentaci√≥n del tutor mecanogr√°fico gtypist.
++@dircategory Miscellaneous:
++@direntry
++* GNU Typist (es): (gtypist.es).	Documentaci√≥n del tutor mecanogr√°fico gtypist
+ @end direntry
+ 
+ @titlepage
