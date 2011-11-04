@@ -1,0 +1,1 @@
+- add also %%{_datadir}/%%{name} directory to %files.
