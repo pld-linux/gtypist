@@ -6,14 +6,13 @@ Summary:	Program for learning typist
 Summary(hu.UTF-8):	Program gépírás tanulásához
 Summary(pl.UTF-8):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
-Version:	2.9
+Version:	2.9.1
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
 Source0:	http://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.xz
-# Source0-md5:	6403c43acceffa3f15ce975bab8f562f
+# Source0-md5:	7f8a5c380fddd61a9f8daf56b93a3b89
 Patch0:		%{name}-info.patch
-Patch1:		%{name}-pl.po.patch
 URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8.2
@@ -51,7 +50,6 @@ Tryb Emacsa do edycji plików .typ gtypista.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %{__rm} po/stamp-po
 
