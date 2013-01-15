@@ -1,0 +1,11 @@
+--- gtypist-2.9.2/configure.ac.orig	2013-01-15 20:47:02.751312615 +0100
++++ gtypist-2.9.2/configure.ac	2013-01-15 20:47:35.384645269 +0100
+@@ -3,7 +3,7 @@
+ AC_INIT([GNU Typist], [esyscmd(./version.sh)], [bug-gtypist@gnu.org], [gtypist])
+ AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
+ AC_CONFIG_SRCDIR([src/gtypist.c])
+-AM_CONFIG_HEADER([config.h])
++AC_CONFIG_HEADERS([config.h])
+ 
+ # Checks for programs
+ 
