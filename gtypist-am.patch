@@ -6,6 +6,6 @@
  AC_CONFIG_SRCDIR([src/gtypist.c])
 -AM_CONFIG_HEADER([config.h])
 +AC_CONFIG_HEADERS([config.h])
+ AC_USE_SYSTEM_EXTENSIONS
  
  # Checks for programs
- 
