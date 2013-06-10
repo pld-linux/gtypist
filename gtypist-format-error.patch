@@ -1,0 +1,13 @@
+diff --git a/src/script.c b/src/script.c
+index 34a52b0..ce04d68 100644
+--- a/src/script.c
++++ b/src/script.c
+@@ -331,7 +331,7 @@ do_exit( FILE *script )
+   }
+   else
+   {
+-      printf(convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
++      printf("%s", convertUTF8ToCurrentEncoding(_("Happy Typing!\n\n")));
+   }
+   exit( 0 );
+ }
