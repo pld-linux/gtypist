@@ -19,7 +19,7 @@ URL:		http://www.gnu.org/software/gtypist/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8.2
 %{?with_emacs:BuildRequires:	emacs}
-BuildRequires:	gettext-devel >= 0.12.1
+BuildRequires:	gettext-devel >= 0.18.2
 BuildRequires:	ncurses-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	texinfo
