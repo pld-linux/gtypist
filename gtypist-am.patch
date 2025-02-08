@@ -1,7 +1,7 @@
---- gtypist-2.10/configure.ac.orig	2024-12-29 13:39:16.513821923 +0100
-+++ gtypist-2.10/configure.ac	2024-12-29 13:41:27.149780874 +0100
-@@ -25,7 +25,7 @@
- AC_INIT([GNU Typist], [esyscmd(./version.sh)], [bug-gtypist@gnu.org], [gtypist])
+--- gtypist-2.10.1/configure.ac.orig	2025-02-08 10:40:02.264076914 +0100
++++ gtypist-2.10.1/configure.ac	2025-02-08 10:40:27.740605562 +0100
+@@ -27,7 +27,7 @@ AC_INIT([GNU Typist],
+         [bug-gtypist@gnu.org], [gtypist])
  AM_INIT_AUTOMAKE([1.8.2 gnu dist-xz])
  AC_CONFIG_SRCDIR([src/gtypist.c])
 -AM_CONFIG_HEADER([config.h])

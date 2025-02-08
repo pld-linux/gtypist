@@ -6,12 +6,12 @@ Summary:	Program for learning typist
 Summary(hu.UTF-8):	Program gépírás tanulásához
 Summary(pl.UTF-8):	Program do nauki bezwzrokowego pisania na klawiaturze
 Name:		gtypist
-Version:	2.10
+Version:	2.10.1
 Release:	1
 License:	GPL v3+
 Group:		Applications/Text
-Source0:	http://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.xz
-# Source0-md5:	c4eec3e156b3018c24703c2620bc4ed3
+Source0:	https://ftp.gnu.org/gnu/gtypist/%{name}-%{version}.tar.xz
+# Source0-md5:	aa807235156c808768b3506d0de2e0f7
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-am.patch
 Patch2:		%{name}-pl.po-update.patch
